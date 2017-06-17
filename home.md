@@ -9,3 +9,12 @@
 * 操作记录
 
 [https启用记录](https启用记录)
+
+# ss-panel 与 ss mu 相关
+* 参考链接
+    * [ss-panel](https://github.com/orvice/ss-panel) 这是信息配置、管理工具，基于 Mysql + PHP 。
+    * [ss go](https://github.com/orvice/shadowsocks-go) 这是服务器端。
+    * [安装 ss go mu 版本和 ss-panel v3](http://bitzhi.com/2016/03/install-ss-go-mu-and-ss-panel-v3/) 这是一篇教程
+* 操作记录
+
+[ss-panel及ss-go-mu安装记录](ss-panel及ss-go-mu安装记录)
