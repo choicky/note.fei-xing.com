@@ -2,7 +2,9 @@
 <!-- SUBTITLE: A quick summary of Https启用记录 -->
 
 # 安装 nginx
-`sudo apt install nginx`
+```
+sudo apt install nginx
+```
 也可以使用其他的web服务器替代 nginx
 
 # 安装 acme.sh
@@ -10,7 +12,7 @@
 curl  https://get.acme.sh | sh
 ```
 
-#使用 acme.sh 生成证书
+# 使用 acme.sh 生成证书
 ```
 curl  https://get.acme.sh | sh
 ```
@@ -45,7 +47,7 @@ acme.sh  --issue  --dns   -d mydomain.com
 acme.sh   --issue   --dns dns_cx   -d mydomain.com  -d www.mydomain.com
 ```
 
-#安装 ssl 证书
+# 安装 ssl 证书
 ```
 cd ~/.acme.sh
 sudo ./acme.sh  --install-cert  -d  mydomain.com   \
@@ -54,7 +56,7 @@ sudo ./acme.sh  --install-cert  -d  mydomain.com   \
         --reloadcmd  "service nginx force-reload"
 ```
 
-#配置 nginx
+# 配置 nginx
 ### 生成更安全的 Diffie-Hellman Group
 ```
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
@@ -122,7 +124,7 @@ server {
 		......
 ```
 
-#通过 crontab 自动续签 ssl 证书
+# 通过 crontab 自动续签 ssl 证书
 
 `sudo crontab -e` 之后，配置内容如下：
 
