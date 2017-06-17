@@ -13,11 +13,6 @@ curl  https://get.acme.sh | sh
 ```
 
 # 使用 acme.sh 生成证书
-```
-curl  https://get.acme.sh | sh
-```
-默认的安装目录是`~/.acme.sh`，其下面有一个`acme.sh`脚本。
-
 ### 使用 http 验证的方式生成证书
 http 验证的原理是在特定目录生成特定文件，如外部互联网能访问这个文件，则验证通过。
 ```
