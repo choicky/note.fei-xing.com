@@ -1,6 +1,10 @@
 <!-- TITLE: Home -->
 <!-- SUBTITLE: 笔记总览 -->
 
+# ss-panel 与 ss mu 相关
+For testing, please go to: [playground](playground)
+如需测试，请前往: [playground](playground)
+
 # 网站 https 相关
 * 参考链接
     * [Let's Encrypt](https://letsencrypt.org/) 提供免费的 ssl 证书，期限 90 天
