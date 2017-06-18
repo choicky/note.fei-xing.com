@@ -13,7 +13,7 @@ curl  https://get.acme.sh | sh
 ```
 
 # 使用 acme.sh 生成证书
-### 使用 http 验证的方式生成证书
+## 使用 http 验证的方式生成证书
 http 验证的原理是在特定目录生成特定文件，如外部互联网能访问这个文件，则验证通过。
 ```
 acme.sh  --issue  -d mydomain.com -d www.mydomain.com  --webroot  /home/wwwroot/mydomain.com/
@@ -21,7 +21,7 @@ acme.sh  --issue  -d mydomain.com -d www.mydomain.com  --webroot  /home/wwwroot/
 
 这需要预先配置好 `nginx` ，使服务器外部可访问 `mydomain.com` 和/或 `www.mydomain.com`
 
-### 使用 dns 验证的方式生成 ssl 证书
+## 使用 dns 验证的方式生成 ssl 证书
 dns 验证的原理是在在域名的解析商设置一条 txt 记录，可手工添加。先运行下面的命令来产生 txt 记录信息，然后再手工增加。
 
 ```
@@ -52,12 +52,12 @@ sudo ./acme.sh  --install-cert  -d  mydomain.com   \
 ```
 
 # 配置 nginx
-### 生成更安全的 Diffie-Hellman Group
+## 生成更安全的 Diffie-Hellman Group
 ```
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 ```
 
-### 定义 ssl 参数
+## 定义 ssl 参数
 ```
 sudo nano -w /etc/nginx/snippets/ssl-params.conf
 ```
@@ -90,7 +90,7 @@ resolver 8.8.8.8 8.8.4.4;
 ssl_dhparam /etc/ssl/certs/dhparam.pem;
 ```
 
-### 修改 nginx 的网站配置
+## 修改 nginx 的网站配置
 ```
 server {
         listen 80;
